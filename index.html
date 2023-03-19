@@ -5,8 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration form </title>
+  <link rel="stylesheet" href="style.css"></link>
 </head>
-<body style="background-color:burlywood;">
+<body>
+
+     <h1>side hustles form </h1>
     <form action="submit-form.php" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required><br>
@@ -17,15 +20,21 @@
       <label for="phone number">phone number:</label>
       <input type="number" id="number" name="phone number" required><br>
 
-      <label for="Gender">Gender:</label>
-      <input type="text" id="text" name="Male, female" required><br>
+      
+
+      <label for="gender">Gender:</label>
+      <select name="gender" id="gender">
+        <option value="M">Male</option>
+       <option value="F">Female</option>
+      </select>
 
       <label for="message">Message:</label>
       <textarea id="message" name="message" required></textarea><br>
 
       <input type="submit" value="Submit">
     </form>
-  
+
+    
 
 </body>
 </html>
